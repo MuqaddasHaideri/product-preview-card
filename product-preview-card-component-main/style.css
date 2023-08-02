@@ -1,0 +1,147 @@
+
+
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	
+	background-color: hsl(30, 38%, 92%);
+	font-size: 14px;
+	min-height: 100vh;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+}
+.container{
+	margin:30px auto;
+	padding: 0px 30px;
+}
+.fractions{
+	max-width: 670px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: white;
+	border-radius: 15px;
+	overflow: hidden;
+}
+.image img{
+	width: 335px;
+	max-width: 100%
+	display: inherit;
+}
+.content{
+	padding :50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+.hedding{
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 13px;
+	color:hsl(228, 12%, 48%);
+	font-weight: 500;
+
+}
+.hedding2{
+font-family: 'Fraunces', serif;
+font-size: 32px;
+line-height: 1em;
+color:  hsl(212, 21%, 14%);
+
+}
+.paragraph{
+font-family: 'Montserrat', sans-serif;
+color:hsl(228, 12%, 48%);
+line-height: 1.7em;
+font-size: 14px;
+}
+.price{
+	display: flex;
+	align-items: center;
+}
+.newprice{
+font-family: 'Fraunces', serif;
+color:hsl(158, 36%, 37%);
+font-size: 30px;
+font-weight:bold;
+}
+.oldprice{
+	font-family: 'Montserrat', sans-serif;
+	margin-left: 20px;
+color:hsl(228, 12%, 48%);
+text-decoration: line-through;
+
+}
+.btn{
+	background-color: hsl(158, 36%, 37%);
+	border:none;
+	padding:12px 0;
+	border-radius: 12px;
+	color: white;
+	font-size: 14px;
+	font-weight: 700;
+	cursor: pointer;
+}
+.btn img{
+	padding-right: 7px;
+}
+.btn:hover{
+background-color: hsl(158, 36%, 23%);
+}
+
+
+@media only screen and (max-width: 628px){
+	.fractions{
+		grid-template-columns: 1fr;
+	}
+	.image img{
+	max-height: 450px;
+	width: 100%;
+	object-fit:cover;
+	}
+	.content{
+		padding: 24px;
+	}
+	.hedding,.hedding2,.paragraph,.price{
+		padding-bottom:  16px;
+	}
+	.hedding2{
+        font-size: 24px;
+	}
+	.paragraph{
+		font-size: 12px;
+	}
+
+}
+
+@media only screen and (max-width: 375px){
+	.fractions{
+		margin:15px auto;
+		padding: 0 15px;
+
+	}
+	.image img{
+		max-height: 290px;	
+
+	}
+	.content{
+		padding: 24px;
+	}
+	.hedding,.hedding2,.paragraph,.price{
+		padding-bottom:  16px;
+	}
+	.hedding2{
+        font-size: 24px;
+	}
+	.paragraph{
+		font-size: 12px;
+	}
+    .newprice{
+    	font-size: 24px;
+    }
+}
